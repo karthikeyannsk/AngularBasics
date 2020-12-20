@@ -1,0 +1,25 @@
+<h2 class="bg-primary">Welcome to {{title}}</h2>
+<table class="table">
+<tr>
+  <th>SNO</th>
+  <th>Name</th>
+  <th [ngClass]="fontFamily">Country</th>
+</tr>
+<tr *ngFor = "let sport of sports" [ngStyle]="{'background-color':bgColor}">
+  <td [ngClass]="'boldText'">{{sport.no}}</td>
+  <td [ngClass]="fontStyle">{{sport.name}}</td>
+  <td [ngClass]="[fontStyle,fontFamily]">{{sport.country}}</td>
+  <td [ngClass]="{'fontStyle':false,'fontColor':true}">{{sport.state}}</td>
+</tr>
+</table>
+<div></div>
+<input [(ngModel)]="FirstName">
+<div>{{FirstName}}</div>
+<!-- <div>{{users.salary | currency:'INR':'INR':'4.0-2'}}</div> -->
+
+<ul>
+  <li><a href="/products">Products</a></li>
+  <li><a href="/product-view">Products View</a></li>
+  <li><a href="/product-edit">Prodcurs Edit</a></li>
+</ul>
+<router-outlet></router-outlet>

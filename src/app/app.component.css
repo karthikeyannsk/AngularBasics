@@ -1,0 +1,19 @@
+.boldText{
+    font-weight: bold;
+}
+.fontStyles{
+    font-style: italic;
+}
+
+.fontFamliy{
+    font-family:cursive;
+    
+}
+
+.fontColor{
+    color: darkgoldenrod;
+}
+.bgColors{
+    background-color: darkkhaki;
+}
+
